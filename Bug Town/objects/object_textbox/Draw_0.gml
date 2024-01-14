@@ -42,6 +42,7 @@ if (draw_char < text_length[page])
 	draw_char = clamp(draw_char, 0, text_length[page])
 }
 
+txtlen = text_length[page]
 // flip thru pages 
 
 if (accept_key)
@@ -73,7 +74,7 @@ if (speaker_sprite[page] != noone)
 {
 	character_height = sprite_get_height(spr_textbox) *1.5
 	var _speaker_x = textbox_x + portrait_x_offset[page]
-	draw_sprite_ext(speaker_sprite[page], 0, _speaker_x,  textbox_y - textbox_height - character_height, frame_width/sprite_get_width(spr_mainchar_frame),  frame_height/sprite_get_height(spr_mainchar_frame), 0, c_white, 1) 
+	draw_sprite_ext(speaker_sprite[page], 0, _speaker_x,  textbox_y - textbox_height - character_height, frame_width/sprite_get_width(speaker_sprite[page]),  frame_height/sprite_get_height(speaker_sprite[page]), 0, c_white, 1) 
 }
 
 draw_sprite_ext(spr_textbox, 0, textbox_x, textbox_y, textbox_width/txtb_spr_w, textbox_height/txtb_spr_h, 0, c_white, 1) 

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet1",
+  "name": "ts_buildings",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -16,10 +16,10 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "spr_street",
-    "path": "sprites/spr_street/spr_street.yy",
+    "name": "spr_buildings",
+    "path": "sprites/spr_buildings/spr_buildings.yy",
   },
-  "spriteNoExport": true,
+  "spriteNoExport": false,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",

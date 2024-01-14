@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_motorcycle",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -10,8 +12,8 @@
     "path": "folders/Objects/decoration.yy",
   },
   "parentObjectId": {
-    "name": "obj_collision",
-    "path": "objects/obj_collision/obj_collision.yy",
+    "name": "obj_flavor",
+    "path": "objects/obj_flavor/obj_flavor.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

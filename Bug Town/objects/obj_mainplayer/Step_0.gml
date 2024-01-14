@@ -23,40 +23,7 @@ if (!instance_exists(obj_blockable))
 	if (keyboard_check(vk_enter) && global.globaltimer <= 0)
 	{
 
-		if (!audio_is_playing(sound_dogbark))
-		{
-			audio_play_sound(sound_dogbark, 1, false)
-		}
-	
-		if ((place_meeting(x + 5, y, InteractableBase) and current_sprite == spr_king_right)
-			or (place_meeting(x - 5, y, InteractableBase) and current_sprite == spr_king_left)
-			or (place_meeting(x, y + 5, InteractableBase) and current_sprite == spr_king_down)
-			or (place_meeting(x, y - 5, InteractableBase) and current_sprite == spr_king_up))
-			and (!instance_exists(object_textbox))
-		{
-			var otherid = GetClosestGuyImPointingAt()
-			if (otherid != noone)
-			{
-				with(instance_create_depth(0, 0, -9999, object_textbox))
-				scr_game_text(otherid.name)
-			}
-
-		}
-			
-		if ((place_meeting(x + 5, y, Object17) and current_sprite == spr_king_right)
-			or (place_meeting(x - 5, y, Object17) and current_sprite == spr_king_left)
-			or (place_meeting(x, y + 5, Object17) and current_sprite == spr_king_down)
-			or (place_meeting(x, y - 5, Object17) and current_sprite == spr_king_up))
-		{
-			with(instance_create_depth(0, 0, -9999, object_textbox))
-			{
-				scr_game_text("frank")
-			}
-		
-		}
 	}
-
-
 	if (keyboard_check(ord("W")))
 	{
 		current_sprite = spr_king_up
@@ -73,6 +40,7 @@ if (!instance_exists(obj_blockable))
 	{
 		current_sprite = spr_king_right
 	}
+	
 	if (keyboard_check(vk_backspace))
 	{
 		current_sprite = spr_king_snooz
@@ -83,9 +51,5 @@ if (!instance_exists(obj_blockable))
 		currentstopwatch = 0
 	}
 
-	if (currentstopwatch >= time_until_idle && current_sprite != spr_king_snooz)
-	{
-		current_sprite = spr_king_snooz
-	}
 }
 
