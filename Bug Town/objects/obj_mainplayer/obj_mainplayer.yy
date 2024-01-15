@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_king_left",
-    "path": "sprites/spr_king_left/spr_king_left.yy",
+    "name": "spr_rono_walk_down",
+    "path": "sprites/spr_rono_walk_down/spr_rono_walk_down.yy",
   },
   "spriteMaskId": null,
   "visible": true,

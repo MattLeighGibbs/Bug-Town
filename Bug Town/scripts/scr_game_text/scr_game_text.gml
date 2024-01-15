@@ -4,20 +4,16 @@ function scr_game_text(textID){
 	switch(textID)
 	{
 		case "ronoshall":
-			scr_text("heya shall!", "rono", 1)
-			scr_text("heya rono!", "shall", -1)
-			scr_text("Do any good crime lately?", "rono", 1)
-			scr_text("Now that you mention it...", "shall", -1)
-			scr_text("... nevermind", "rono", 1)
+			scr_text("Its a motorcycle!")
+			scr_text("but its one of those new slime powered ones")
 			break
-		case "1":
-			scr_text("12123232")
+		case "pickle":
+			scr_text("I sure love pickles!", "shallhappy", 1)
+			scr_text("and hate relish", "shallangy", -1)
 			break
-		case "2":
-			scr_text("223232323")
-			break
-		case "3":
-			scr_text("34534546t")
+		case "eb_sign1":
+			scr_text("Thanks for reading me! I can die happy now!")
+			scr_text("Happy end!", "shallhappy", 1)
 			break
 		default:
 			scr_text("its a secret to everybody!")

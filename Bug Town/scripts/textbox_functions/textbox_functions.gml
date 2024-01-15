@@ -8,25 +8,19 @@ function scr_text(_text){
 	{
 		switch(argument[1])
 		{
-			case "main":
-				speaker_sprite[page_number] = spr_mainchar_frame
+			case "shallhappy":
+				speaker_sprite[page_number] = spr_shallhappy
 				break
-			case "cow":
-				speaker_sprite[page_number] = spr_cow_frame
-				break
-			case "frank":
-				speaker_sprite[page_number] = Sprite30
-				break
-			case "rono":
-				speaker_sprite[page_number] = spr_rono
-				break
-			case "shall":
-				speaker_sprite[page_number] = spr_shall
-				break
-			
+			case "shallangy":
+				speaker_sprite[page_number] = spr_shallangy
+				break			
 		}
 	}
-
+	
+	else if (argument_count == 1)
+	{
+		speaker_sprite[page_number] = noone
+	}
 	
 	if (argument_count > 2) 
 	{

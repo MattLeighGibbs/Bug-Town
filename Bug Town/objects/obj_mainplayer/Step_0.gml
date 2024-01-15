@@ -34,7 +34,7 @@ if (!instance_exists(obj_blockable))
 	}
 	if (keyboard_check(ord("S")))
 	{
-		current_sprite = spr_king_down
+		current_sprite = spr_rono_walk_down
 	}
 	if (keyboard_check(ord("D")))
 	{
@@ -50,6 +50,8 @@ if (!instance_exists(obj_blockable))
 	{
 		currentstopwatch = 0
 	}
+	
+	ds_queue_enqueue(global.stepqueue, [x, y])
 
 }
 

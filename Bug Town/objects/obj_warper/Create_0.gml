@@ -4,3 +4,5 @@
 target_room = noone
 target_x = 0
 target_y = 0
+
+hit_enter_to_enter = false

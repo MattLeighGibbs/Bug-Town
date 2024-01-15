@@ -1,12 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-textbox_width = 192
+textbox_width = 150
 textbox_height = 64
 
-frame_width = 20	
-frame_height = 30
+frame_width = 64
+frame_height = 64
 
 border = 8
 line_sep = 12
