@@ -3,6 +3,7 @@
 
 global.globaltimer = 0
 global.stepqueue = ds_queue_create()
+global.line_leader = "rono"
 
 function ItemBase() constructor
 {

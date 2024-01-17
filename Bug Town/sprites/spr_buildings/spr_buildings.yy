@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "tilesets",
-    "path": "folders/Sprites/tilesets.yy",
+    "path": "folders/Sprites/protags/tilesets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

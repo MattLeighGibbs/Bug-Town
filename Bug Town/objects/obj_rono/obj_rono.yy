@@ -4,6 +4,7 @@
   "name": "obj_rono",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -11,8 +12,11 @@
     "name": "protags",
     "path": "folders/Objects/protags.yy",
   },
-  "parentObjectId": null,
-  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_mainplayer",
+    "path": "objects/obj_mainplayer/obj_mainplayer.yy",
+  },
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -28,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_rono_stand_down",
-    "path": "sprites/spr_rono_stand_down/spr_rono_stand_down.yy",
+    "name": "spr_rono_walk_down",
+    "path": "sprites/spr_rono_walk_down/spr_rono_walk_down.yy",
   },
   "spriteMaskId": null,
   "visible": true,

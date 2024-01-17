@@ -26,6 +26,7 @@ current_sprite = spr_king_left
 time_until_idle = 1000
 currentstopwatch = 0
 
+myname = ""
 
 function GetClosestGuyImPointingAt()
 {
