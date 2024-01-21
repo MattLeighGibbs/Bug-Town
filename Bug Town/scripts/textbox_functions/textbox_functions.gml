@@ -14,6 +14,54 @@ function scr_text(_text){
 			case "shallangy":
 				speaker_sprite[page_number] = spr_shallangy
 				break			
+			case "ronoscared0":
+				speaker_sprite[page_number] = spr_rono_emotion_scared0
+				break
+			case "ronoscared1":
+				speaker_sprite[page_number] = spr_rono_emotion_scared1
+				break
+			case "ronoscared2":
+				speaker_sprite[page_number] = spr_rono_emotion_scared2
+				break
+			case "ronoscared3":
+				speaker_sprite[page_number] = spr_rono_emotion_scared3
+				break
+			case "ronoangry0":
+				speaker_sprite[page_number] = spr_rono_emotion_angry0
+				break
+			case "ronoangry1":
+				speaker_sprite[page_number] = spr_rono_emotion_angry1
+				break
+			case "ronoangry2":
+				speaker_sprite[page_number] = spr_rono_emotion_angry2
+				break
+			case "ronoangry3":
+				speaker_sprite[page_number] = spr_rono_emotion_angry3
+				break
+			case "ronohappy0":
+				speaker_sprite[page_number] = spr_rono_emotion_happy0
+				break
+			case "ronohappy1":
+				speaker_sprite[page_number] = spr_rono_emotion_happy1
+				break
+			case "ronohappy2":
+				speaker_sprite[page_number] = spr_rono_emotion_happy2
+				break
+			case "ronohappy3":
+				speaker_sprite[page_number] = spr_rono_emotion_happy3
+				break
+			case "ronosad0":
+				speaker_sprite[page_number] = spr_rono_emotion_sad0
+				break
+			case "ronosad1":
+				speaker_sprite[page_number] = spr_rono_emotion_sad1
+				break
+			case "ronosad2":
+				speaker_sprite[page_number] = spr_rono_emotion_sad2
+				break
+			case "ronosad3":
+				speaker_sprite[page_number] = spr_rono_emotion_sad3
+				break
 		}
 	}
 	

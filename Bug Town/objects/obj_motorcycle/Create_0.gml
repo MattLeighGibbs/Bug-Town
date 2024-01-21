@@ -3,4 +3,6 @@
 
 event_inherited()
 
-name = "moto"
+name = "bagel"
+
+textid = "bagel"

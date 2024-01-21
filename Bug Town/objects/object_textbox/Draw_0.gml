@@ -19,11 +19,15 @@ if (!setup)
 		//character on left 
 		text_x_offset[p] = 80
 		portrait_x_offset[p] = 8
+		
+		textbox_width[p] = 160 
+		
+		line_width[p] = textbox_width[p] - border*2
 
 		if (speaker_sprite[p] == noone)
 		{
 			text_x_offset[p] = 16
-			textbox_width = 216
+			textbox_width[p] = 216
 			textbox_x = 16
 			textbox_y = 32
 		}
@@ -33,10 +37,9 @@ if (!setup)
 			if (speaker_side[p] == -1)
 			{
 				text_x_offset[p] = 8
-				portrait_x_offset[p] = 170
+				portrait_x_offset[p] = 176
 			}
 		}
-
 	}
 }
 
@@ -75,19 +78,19 @@ if (accept_key)
 txtb_spr_w = sprite_get_width(spr_textbox)
 txtb_spr_h = sprite_get_height(spr_textbox)
 
-draw_sprite_ext(spr_textbox, 0, frame_width/sprite_get_width(spr_frame) + textbox_x + text_x_offset[page], textbox_y, textbox_width/txtb_spr_w, textbox_height/txtb_spr_h, 0, c_white, 1) 
+draw_sprite_ext(spr_textbox, 0, frame_width/sprite_get_width(spr_frame) + textbox_x + text_x_offset[page], textbox_y, textbox_width[page]/txtb_spr_w, textbox_height/txtb_spr_h, 0, c_white, 1) 
 
 // draw the text 
 
 draw_set_font (Font3) 
 
 var _drawtext = string_copy(text[page], 1, draw_char)
-draw_text_ext(frame_width/sprite_get_width(spr_frame) + textbox_x + text_x_offset[page] + border, textbox_y + border, _drawtext, line_sep, line_width)
+draw_text_ext(frame_width/sprite_get_width(spr_frame) + textbox_x + text_x_offset[page] + border, textbox_y + border, _drawtext, line_sep, line_width[page])
 
 
 if (speaker_sprite[page] != noone)
 {
 	var _speaker_x = textbox_x + portrait_x_offset[page]
 	draw_sprite_ext(spr_frame, 0, _speaker_x, textbox_y,  frame_width/sprite_get_width(spr_frame),  frame_height/sprite_get_height(spr_frame), 0, c_white, 1) 
-	draw_sprite_ext(speaker_sprite[page], 0, _speaker_x, textbox_y,  frame_width/sprite_get_width(spr_shallangy),  frame_height/sprite_get_height(spr_shallhappy), 0, c_white, 1) 
+	draw_sprite_ext(speaker_sprite[page], 0, _speaker_x, textbox_y,  frame_width/sprite_get_width(speaker_sprite[page]),  frame_height/sprite_get_height(speaker_sprite[page]), 0, c_white, 1) 
 }

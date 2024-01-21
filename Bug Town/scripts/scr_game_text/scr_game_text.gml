@@ -15,6 +15,12 @@ function scr_game_text(textID){
 			scr_text("Thanks for reading me! I can die happy now!")
 			scr_text("Happy end!", "shallhappy", 1)
 			break
+		case "bagel":
+			scr_text("Hey Rono, want a snack?", "shallhappy", 1)
+			scr_text("the bagel is breathing.......", "ronoscared2", -1)
+			scr_text("what?", "shallhappy", 1)
+			scr_text("THE BAGEL IS BREATHING", "ronoscared3", -1)
+			break
 		default:
 			scr_text("its a secret to everybody!")
 		break
