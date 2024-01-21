@@ -5,3 +5,9 @@ if (global.globaltimer > 0)
 {
 	global.globaltimer--
 }
+
+
+if (global.switchtimer > 0)
+{
+	global.switchtimer--
+}

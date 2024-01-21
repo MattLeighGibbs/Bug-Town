@@ -28,6 +28,16 @@ currentstopwatch = 0
 
 myname = ""
 
+place_history = ds_list_create()
+
+doneswitching = false
+switching_spots = false
+
+for (i = 0; i < 100; i++)
+{
+	ds_list_add(place_history, [x, y])
+}
+
 function GetClosestGuyImPointingAt()
 {
 	toright = (place_meeting(x + 5, y, InteractableBase) and current_sprite == spr_king_right)

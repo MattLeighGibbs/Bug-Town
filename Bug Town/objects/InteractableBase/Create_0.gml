@@ -4,3 +4,4 @@
 text = []
 name = "frank"
 current_sprite = noone
+

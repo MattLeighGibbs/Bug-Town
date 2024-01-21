@@ -9,3 +9,4 @@ if (place_meeting(x + hspeed, y + vspeed, obj_collision))
 
 
 
+depth = -y

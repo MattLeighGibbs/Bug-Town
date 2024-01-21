@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 global.globaltimer = 0
+global.switchtimer = 0
 global.stepqueue = ds_queue_create()
 global.line_leader = "rono"
 
