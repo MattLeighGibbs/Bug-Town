@@ -6,21 +6,21 @@ switching_spots = ds_list_size(obj_shall.place_history) <= 25
 	
 if (!instance_exists(obj_blockable))
 {	
+	movex = keyboard_check(ord("D")) - keyboard_check(ord("A"))
+	movey = keyboard_check(ord("S")) - keyboard_check(ord("W"))
+			
 	if (place_meeting(x + movex, y, obj_collision) && !place_meeting(x + movex, y, Enemy))
 	{
 		movex = 0
 	}
 
-	if (place_meeting(x, y + movey, obj_collision) && !place_meeting(x, y + movey, Enemy))
+	if (instance_place(x, y + movey, obj_collision) != noone)
 	{
 		movey = 0
 	}
 
 	if (global.line_leader == myname)
 	{
-		movex = keyboard_check(ord("D")) - keyboard_check(ord("A"))
-		movey = keyboard_check(ord("S")) - keyboard_check(ord("W"))
-			
 		x += movex
 		y += movey
 
