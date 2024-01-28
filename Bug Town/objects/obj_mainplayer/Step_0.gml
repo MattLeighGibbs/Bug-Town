@@ -37,10 +37,11 @@ if (!instance_exists(obj_blockable))
 			nextplace = ds_list_find_value(obj_rono.place_history, 25)
 		}
 		
-		
-		x = nextplace[0]
-		y = nextplace[1]
-
+		 if (nextplace != noone)
+		 {			 
+			x = nextplace[0]
+			y = nextplace[1]
+		 }
 	}
 	
 	if (((x != xprevious || y != yprevious) || switching_spots) && global.switchtimer == 0)

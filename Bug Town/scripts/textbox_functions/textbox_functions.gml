@@ -8,12 +8,6 @@ function scr_text(_text){
 	{
 		switch(argument[1])
 		{
-			case "shallhappy":
-				speaker_sprite[page_number] = spr_shallhappy
-				break
-			case "shallangy":
-				speaker_sprite[page_number] = spr_shallangy
-				break			
 			case "ronoscared0":
 				speaker_sprite[page_number] = spr_rono_emotion_scared0
 				break
@@ -61,6 +55,54 @@ function scr_text(_text){
 				break
 			case "ronosad3":
 				speaker_sprite[page_number] = spr_rono_emotion_sad3
+				break
+			case "shallscared0":
+				speaker_sprite[page_number] = spr_shall_emotion_scared0
+			break
+			case "shallscared1":
+				speaker_sprite[page_number] = spr_shall_emotion_scared1
+				break
+			case "shallscared2":
+				speaker_sprite[page_number] = spr_shall_emotion_scared2
+				break
+			case "shallscared3":
+				speaker_sprite[page_number] = spr_shall_emotion_scared3
+				break
+			case "shallangry0":
+				speaker_sprite[page_number] = spr_shall_emotion_angry0
+				break
+			case "shallangry1":
+				speaker_sprite[page_number] = spr_shall_emotion_angry1
+				break
+			case "shallangry2":
+				speaker_sprite[page_number] = spr_shall_emotion_angry2
+				break
+			case "shallangry3":
+				speaker_sprite[page_number] = spr_shall_emotion_angry3
+				break
+			case "shallhappy0":
+				speaker_sprite[page_number] = spr_shall_emotion_happy0
+				break
+			case "shallhappy1":
+				speaker_sprite[page_number] = spr_shall_emotion_happy1
+				break
+			case "shallhappy2":
+				speaker_sprite[page_number] = spr_shall_emotion_happy2
+				break
+			case "shallhappy3":
+				speaker_sprite[page_number] = spr_shall_emotion_happy3
+				break
+			case "shallsad0":
+				speaker_sprite[page_number] = spr_shall_emotion_sad0
+				break
+			case "shallsad1":
+				speaker_sprite[page_number] = spr_shall_emotion_sad1
+				break
+			case "shallsad2":
+				speaker_sprite[page_number] = spr_shall_emotion_sad2
+				break
+			case "shallsad3":
+				speaker_sprite[page_number] = spr_shall_emotion_sad3
 				break
 		}
 	}

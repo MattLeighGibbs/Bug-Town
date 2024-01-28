@@ -16,9 +16,9 @@ function scr_game_text(textID){
 			scr_text("Happy end!", "shallhappy", 1)
 			break
 		case "bagel":
-			scr_text("Hey Rono, want a snack?", "shallhappy", 1)
+			scr_text("Hey Rono, want a snack?", "shallhappy0", 1)
 			scr_text("the bagel is breathing.......", "ronoscared2", -1)
-			scr_text("what?", "shallhappy", 1)
+			scr_text("what?", "shallscared1", 1)
 			scr_text("THE BAGEL IS BREATHING", "ronoscared3", -1)
 			break
 		default:
