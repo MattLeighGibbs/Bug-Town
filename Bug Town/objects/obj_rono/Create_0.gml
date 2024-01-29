@@ -5,3 +5,5 @@
 event_inherited();
 
 myname = "rono"
+
+items = ["french fry", "gun"]

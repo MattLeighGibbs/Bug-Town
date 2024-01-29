@@ -7,7 +7,7 @@ if (!hit_enter_to_enter || (hit_enter_to_enter && keyboard_check(vk_enter)))
 	//global.switchtimer = 30
 
 	for (var i = 0; i < instance_number(obj_mainplayer); ++i;)
-    {
+      {
 //		thing = instance_find(obj_mainplayer,i);     
 //		ds_list_clear(thing.place_history)
 		var _instance = instance_find(obj_mainplayer,i);     

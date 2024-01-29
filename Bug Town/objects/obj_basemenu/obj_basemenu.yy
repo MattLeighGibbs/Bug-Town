@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_titlemenu",
+  "name": "obj_basemenu",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -14,8 +14,8 @@
     "path": "folders/Objects/infrastructure.yy",
   },
   "parentObjectId": {
-    "name": "obj_basemenu",
-    "path": "objects/obj_basemenu/obj_basemenu.yy",
+    "name": "obj_blockable",
+    "path": "objects/obj_blockable/obj_blockable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

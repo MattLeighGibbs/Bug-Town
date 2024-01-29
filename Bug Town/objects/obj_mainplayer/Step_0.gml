@@ -25,7 +25,7 @@ if (!instance_exists(obj_blockable))
 		y += movey
 
 	}
-	else if (global.switchtimer <= 0 && !switching_spots)
+	else if ( !switching_spots)
 	{
 		nextplace = []
 		if (myname == "rono")
@@ -37,7 +37,7 @@ if (!instance_exists(obj_blockable))
 			nextplace = ds_list_find_value(obj_rono.place_history, 25)
 		}
 		
-		 if (nextplace != noone)
+		 if (!is_undefined(nextplace))
 		 {			 
 			x = nextplace[0]
 			y = nextplace[1]
@@ -89,7 +89,5 @@ if (!instance_exists(obj_blockable))
 	{
 		//camera_set_view_target(view_camera[0], id)
 	}
-
-
 }
 

@@ -33,6 +33,8 @@ place_history = ds_list_create()
 doneswitching = false
 switching_spots = false
 
+inventory = []
+
 for (i = 0; i < 100; i++)
 {
 	ds_list_add(place_history, [x, y])

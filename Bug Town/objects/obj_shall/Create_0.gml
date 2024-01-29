@@ -7,3 +7,5 @@
 event_inherited();
 
 myname = "shall"
+
+items = ["fancy pickle", "knife"]

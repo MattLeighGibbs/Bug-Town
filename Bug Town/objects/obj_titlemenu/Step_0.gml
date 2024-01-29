@@ -1,32 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-up_key = keyboard_check_pressed(vk_up)
-down_key = keyboard_check_pressed(vk_down)
-accept_key = keyboard_check_pressed(vk_enter)
+event_inherited()
 
-// store number of options in current menu
-op_length = array_length(options[menu_level])
-
-// move thru the menu
-pos += down_key - up_key
-
-if (accept_key)
-{
-		var _sml = menu_level
-}
-
-if (pos >= op_length)
-{
-	pos = 0
-}
-
-if (pos < 0)
-{
-	pos = op_length - 1
-}
-
-if (accept_key)
+if (_accept_key)
 {
 	
 	switch (menu_level)
